@@ -1,4 +1,4 @@
-.title-bar .item{
+.title-bar .item {
     position: absolute;
     right: 0;
     width: 45px;
@@ -7,7 +7,7 @@
     color: #a4b0be;
 }
 
-.title-bar .item:hover{
+.title-bar .item:hover {
     background: #ff5252;
     color: white;
 }

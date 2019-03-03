@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Item = props => (
     <div className="title-bar item">
-        <FontAwesomeIcon className="icon" icon={props.icon}/>
+        <FontAwesomeIcon className="icon" icon={props.icon} />
     </div>
 );
 
