@@ -1,13 +1,49 @@
-import React from "react";
+import React, { Component } from "react";
 
 import "./styles.css";
 
 import Item from "./Item";
 
-const TitleBar = () => (
-    <div className="title-bar">
-        <Item icon="times" />
-    </div>
-);
+const { remote } = window.require("electron");
 
-export default TitleBar;
+export default class TitleBar extends Component {
+    handleClose = () => {
+        remote.app.quit();
+    };
+
+    handleMaximize = () => {
+        const currentWindow = remote.getCurrentWindow();
+
+        if (currentWindow.isMaximized()) {
+            currentWindow.unmaximize();
+        } else {
+            currentWindow.maximize();
+        }
+    };
+
+    handleMinimize = () => {
+        remote.getCurrentWindow().minimize();
+    };
+
+    render() {
+        return (
+            <div className="title-bar">
+                <Item
+                    onClick={this.handleClose}
+                    hoverColor="#ff5252"
+                    icon="times"
+                />
+                <Item
+                    onClick={this.handleMaximize}
+                    hoverColor="#353b48"
+                    icon="square"
+                />
+                <Item
+                    onClick={this.handleMinimize}
+                    hoverColor="#353b48"
+                    icon="window-maximize"
+                />
+            </div>
+        );
+    }
+}

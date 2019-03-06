@@ -1,14 +1,14 @@
 .title-bar .item {
-    position: absolute;
-    right: 0;
-    width: 45px;
+    -webkit-app-region: none;
     display: flex;
+    float: right;
+    width: 45px;
     justify-content: center;
     color: #a4b0be;
+    transition: all ease-in 0.1s;
 }
 
 .title-bar .item:hover {
-    background: #ff5252;
     color: white;
 }
 
