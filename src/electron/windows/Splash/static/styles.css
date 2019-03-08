@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    -webkit-app-region: drag;
+    width: 100%;
+    display: table;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.container .logo {
+    width: 100px;
+    margin-bottom: 60px;
+}
+
+.container p {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+}

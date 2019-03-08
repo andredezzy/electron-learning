@@ -1,18 +1,17 @@
 const { app, BrowserWindow } = require("electron");
 
+const { Main, Splash } = require("./windows");
+
 function createWindow() {
-    let win = new BrowserWindow({
-        width: 800,
-        height: 600,
-        frame: false,
-    });
+    Main.createWindow();
+    Splash.createWindow();
 
-    win.on("close", () => {
-        win = null;
+    Main.window.once("ready-to-show", () => {
+        setTimeout(() => {
+            Splash.window.close();
+            Main.window.show();
+        }, 3000);
     });
-
-    win.loadURL("http://localhost:3000");
-    win.show();
 }
 
 app.on("ready", createWindow);
