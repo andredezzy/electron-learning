@@ -7,9 +7,10 @@ function createWindow() {
     Splash.createWindow();
 
     Main.window.once("ready-to-show", () => {
+        process.stdout.write(`ready, the "Main" window will appear in 3 seconds!\n`);
         setTimeout(() => {
-            Splash.window.close();
             Main.window.show();
+            Splash.window.close();
         }, 3000);
     });
 }

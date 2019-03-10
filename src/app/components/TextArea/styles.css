@@ -1,0 +1,27 @@
+.channel-container {
+    border-top: 1px solid #747d8c;
+    position: absolute;
+    bottom: 0;
+    width: -webkit-calc(100% - 40px);
+    margin: 25px 20px;
+    font-family: 'Lato';
+}
+
+.channel-container .inner {
+    background: #a4b0be;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.channel-container .inner .text-area {
+    background: transparent;
+    color: #57606f;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    width: -webkit-calc(100% - 20px);
+    min-height: 18px;
+    max-height: 144px;
+    padding: 10px;
+}

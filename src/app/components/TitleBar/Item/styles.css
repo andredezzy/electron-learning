@@ -2,7 +2,7 @@
     -webkit-app-region: none;
     display: flex;
     float: right;
-    width: 45px;
+    width: 40px;
     justify-content: center;
     color: #a4b0be;
     transition: all ease-in 0.1s;
@@ -14,5 +14,5 @@
 
 .title-bar .item .icon {
     margin: auto;
-    width: 100%;
+    width: 12px;
 }

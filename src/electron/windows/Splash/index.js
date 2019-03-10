@@ -9,8 +9,8 @@ module.exports = class SplashWindow extends Window {
 
     create() {
         this.window = new BrowserWindow({
-            width: 450,
-            height: 500,
+            width: 350,
+            height: 400,
             transparent: true,
             frame: false,
             center: true,

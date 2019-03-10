@@ -11,6 +11,8 @@ module.exports = class MainWindow extends Window {
         this.window = new BrowserWindow({
             width: 800,
             height: 600,
+            minWidth: 800,
+            minHeight: 600,
             show: false,
             frame: false
         });
@@ -22,7 +24,7 @@ module.exports = class MainWindow extends Window {
 
     _capture() {
         this.window.on("close", () => {
-            process.stdout.write('app was closed\n');
+            process.stdout.write("app was closed\n");
             this.window = null;
         });
     }

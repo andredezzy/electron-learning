@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Routes from "./routes";
 
 import "./styles.css";
 import "./fontAwesome";
@@ -10,7 +11,7 @@ class App extends Component {
         return (
             <div>
                 <TitleBar />
-                <h1>Learning Electron :D</h1>
+                <Routes />
             </div>
         );
     }
