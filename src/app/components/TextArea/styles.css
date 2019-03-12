@@ -4,7 +4,7 @@
     bottom: 0;
     width: -webkit-calc(100% - 40px);
     margin: 25px 20px;
-    font-family: 'Lato';
+    font-family: "Lato";
 }
 
 .channel-container .inner {
@@ -24,4 +24,24 @@
     min-height: 18px;
     max-height: 144px;
     padding: 10px;
+}
+
+.channel-container .inner .text-area::-webkit-scrollbar {
+    width: 14px;
+}
+
+.channel-container .inner .text-area::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #a4b0be;
+    border-width: 3px;
+}
+
+.channel-container .inner .text-area::-webkit-scrollbar-track {
+    background: #747d8c;
+}
+
+.channel-container .inner .text-area::-webkit-scrollbar-thumb {
+    background: #4b4b4b;
 }
