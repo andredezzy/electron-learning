@@ -1,5 +1,5 @@
 .channel-container {
-    border-top: 1px solid #747d8c;
+    border-top: 1px solid #4B5161;
     position: absolute;
     bottom: 0;
     width: -webkit-calc(100% - 40px);
@@ -8,14 +8,14 @@
 }
 
 .channel-container .inner {
-    background: #a4b0be;
+    background: #454B59;
     margin-top: 15px;
     border-radius: 5px;
 }
 
 .channel-container .inner .text-area {
     background: transparent;
-    color: #57606f;
+    color: #B6C6EB;
     border: none;
     outline: none;
     resize: none;
@@ -26,6 +26,10 @@
     padding: 10px;
 }
 
+.channel-container .inner .text-area::placeholder {
+    color: #768199;
+}
+
 .channel-container .inner .text-area::-webkit-scrollbar {
     width: 14px;
 }
@@ -34,14 +38,14 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border-style: solid;
-    border-color: #a4b0be;
+    border-color: #454B59;
     border-width: 3px;
 }
 
 .channel-container .inner .text-area::-webkit-scrollbar-track {
-    background: #747d8c;
+    background: #393E4A;
 }
 
 .channel-container .inner .text-area::-webkit-scrollbar-thumb {
-    background: #4b4b4b;
+    background: #292D36;
 }

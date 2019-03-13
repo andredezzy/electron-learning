@@ -35,12 +35,12 @@ export default class TitleBar extends Component {
                 />
                 <Item
                     onClick={this.handleMaximize}
-                    hoverColor="#353b48"
+                    hoverColor="#282A36"
                     icon="square"
                 />
                 <Item
                     onClick={this.handleMinimize}
-                    hoverColor="#353b48"
+                    hoverColor="#282A36"
                     icon="window-maximize"
                 />
             </div>

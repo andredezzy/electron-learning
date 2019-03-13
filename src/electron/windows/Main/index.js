@@ -14,7 +14,8 @@ module.exports = class MainWindow extends Window {
             minWidth: 800,
             minHeight: 600,
             show: false,
-            frame: false
+            frame: false,
+            backgroundColor: '#616161'
         });
 
         this.window.loadURL("http://localhost:3000");
